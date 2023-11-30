@@ -1,0 +1,22 @@
+.box {
+    background: rgba(0,0,0,.75);
+    display: flex;
+    flex-direction: column;
+    padding: 4em 3em;
+    width: 50%;
+    min-width: 400px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.box > span {
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.inputs,
+.inputs label {
+    display: flex;
+    flex-direction: column;;
+}
