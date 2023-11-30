@@ -4,7 +4,7 @@
     max-width: 500px;
     min-height: 660px;
     padding: 4em 4em;
-    margin: -1em auto 4em auto;
+    margin: -0.7em auto 6.5em auto;
     border-radius: 6px;
 }
 
@@ -12,6 +12,7 @@
     font-size: 2em;
     font-weight: normal;
     margin-bottom: .8em;
+    color: var(--white);
 }
 
 /* INPUTS AREA */
@@ -42,6 +43,11 @@ label[for="password"] span:first-of-type:hover{
     cursor: pointer;
 }
 
+/* Required Input */
+.requiredInput {
+    border-bottom: 1px solid var(--error);
+}
+
 /* Button && Input commum */
 .inputs label input,
 form > button {
@@ -55,6 +61,7 @@ form > button {
 .error {
     color: var(--error);
     padding: 6px 3px;
+    margin-bottom: 1em;
 }
 
 /* Button */
@@ -71,13 +78,14 @@ form > button {
     justify-content: space-between;
 }
 
-.helpAndRemember a:hover {
-    text-decoration: underline;
+.helpAndRemember label input {
+    width: 16px;
+    height: 16px;
 }
 
 /* Texto da Box */
 .sign {
-    margin: 2em 0;
+    margin: 1em 0;
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -89,4 +97,10 @@ form > button {
 
 .sign p a {
     color: var(--links);
+}
+
+.sign p,
+.helpAndRemember,
+.error {
+    font-size: .8em;
 }

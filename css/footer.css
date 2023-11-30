@@ -5,7 +5,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5em;
+    gap: 2em;
 }
 
 footer .links {
@@ -17,9 +17,20 @@ footer .links {
 }
 
 footer select {
+    padding: 1em 1.2em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+footer select,
+footer select option {
     background: var(--select);
 }
 
 footer select::before {
     content: url(../images/global.png);
+    filter: invert();
+    width: 20px;
+    position: absolute;
+    left: 0;
 }
