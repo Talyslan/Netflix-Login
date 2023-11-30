@@ -1,7 +1,7 @@
 <h1 align="center"> Netflix - Login Screen</h1>
 
-<img src="https://github.com/Talyslan/Gerador-de-Cancelamento/assets/78499700/79dc42a1-54ff-421d-be7a-a9fb8cabc11b" alt="Layout no Computador" />
-<img src="https://github.com/Talyslan/Gerador-de-Cancelamento/assets/78499700/c56c83f7-6098-43a5-a9b3-26fd7c7ebfc4" alt="Layout no Celular" />
+<!-- <img src="https://github.com/Talyslan/Gerador-de-Cancelamento/assets/78499700/79dc42a1-54ff-421d-be7a-a9fb8cabc11b" alt="Layout no Computador" />
+<img src="https://github.com/Talyslan/Gerador-de-Cancelamento/assets/78499700/c56c83f7-6098-43a5-a9b3-26fd7c7ebfc4" alt="Layout no Celular" /> -->
 
 
 ## 🗿 O Projeto

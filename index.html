@@ -12,7 +12,6 @@
 
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/box.css">
     <title>Netflix</title>
 </head>
@@ -23,23 +22,21 @@
 
     <main>
         <div class="box">
-            <span>Entrar</span>
-
             <form action="">
+                <h1>Entrar</h1>
                 <div class="inputs">
                     <label for="user">
                         <input type="text" id="user" placeholder="Email ou número de telefone" required />
                         
-                        <span id="emailError">Informe um email ou número de telefone válido.</span>
+                        <span id="emailError" class="error">Informe um email ou número de telefone válido.</span>
                     </label>
     
                     <label for="password">
                         <input type="password" id="password" placeholder="Senha" required />
                         <span>Mostrar</span>
                         
-                        <span id="senhaError">A senha deve ter entre 4 e 60 caracteres.</span>
+                        <span id="senhaError" class="error">A senha deve ter entre 4 e 60 caracteres.</span>
                     </label>
-    
                 </div>
     
                 <button type="submit">Entrar</button>
@@ -55,19 +52,21 @@
             </div>
 
             <div class="sign">
-                <span>Novo por aqui? <a href="#Assine">Assine agora</a>.</span>
+                <span>Novo por aqui? <a href="#Assine">Assine agora.</a></span>
 
                 <p>
-                    Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#SaibaMais">Saiba Mais.</a>
+                    Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. 
+                    <br />
+                    <a href="#SaibaMais">Saiba Mais.</a>
                 </p>
             </div>
         </div>
     </main>
 
     <footer>
-        <span>
+        <p>
             Dúvidas? Ligue <a href="#Ligue">0800 581 2876</a>
-        </span>
+        </p>
 
         <div class="links">
             <a href="">Perguntas frequentes</a>

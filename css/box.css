@@ -1,22 +1,92 @@
 .box {
-    background: rgba(0,0,0,.75);
-    display: flex;
-    flex-direction: column;
-    padding: 4em 3em;
+    background: var(--back);
     width: 50%;
-    min-width: 400px;
-    margin: 0 auto;
+    max-width: 500px;
+    min-height: 660px;
+    padding: 4em 4em;
+    margin: -1em auto 4em auto;
     border-radius: 6px;
 }
 
-.box > span {
+.box form h1 {
     font-size: 2em;
     font-weight: normal;
-    margin-bottom: 16px;
+    margin-bottom: .8em;
 }
 
-.inputs,
+/* INPUTS AREA */
 .inputs label {
+    position: relative;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+}
+
+.inputs label input {
+    background: var(--inputs);
+    padding: 0 .7em;
+}
+
+.inputs label input::placeholder {
+    font-size: 1.1em;
+    padding-left: .5em;
+}
+
+/* Ocultar/Mostar senha */
+label[for="password"] span:first-of-type {
+    position: absolute;
+    right: 0;
+    padding: 12px 12px;;
+}
+
+label[for="password"] span:first-of-type:hover{
+    cursor: pointer;
+}
+
+/* Button && Input commum */
+.inputs label input,
+form > button {
+    width: 100%;
+    height: 3.5em;
+    border-radius: 4px;
+    color: var(--white);
+}
+
+/* Error Message */
+.error {
+    color: var(--error);
+    padding: 6px 3px;
+}
+
+/* Button */
+form > button {
+    background: var(--btn);
+    font-weight: bold;
+    font-size: .9em;
+    margin: 24px 0 12px 0;
+}
+
+/* Help and Remember */
+.helpAndRemember {
+    display: flex;
+    justify-content: space-between;
+}
+
+.helpAndRemember a:hover {
+    text-decoration: underline;
+}
+
+/* Texto da Box */
+.sign {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.sign span a {
+    color: var(--white)
+}
+
+.sign p a {
+    color: var(--links);
 }
