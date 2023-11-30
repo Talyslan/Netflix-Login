@@ -3,6 +3,11 @@ footer {
     width: 100%;
     padding: 2em;
     display: flex;
+    justify-content: center;
+}
+
+footer .container {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2em;
@@ -10,27 +15,28 @@ footer {
 
 footer .links {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 4em;
+    column-gap: 15em;
     row-gap: .8em;
     font-size: .8em;
 }
 
 footer select {
-    padding: 1em 1.2em;
+    background: var(--select);
+    padding: 1em 2em;
     margin-bottom: 2em;
+    z-index: 1; 
+}
+
+.select-container {
     position: relative;
 }
 
-footer select,
-footer select option {
-    background: var(--select);
-}
-
-footer select::before {
-    content: url(../images/global.png);
+footer .select-container img {
     filter: invert();
     width: 20px;
     position: absolute;
-    left: 0;
+    left: 6px;
+    top: 12px;
 }
