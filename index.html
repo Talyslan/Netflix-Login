@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +16,12 @@
     <link rel="stylesheet" href="./css/box.css">
     <title>Netflix</title>
 </head>
+
 <body>
     <header>
-        <img src="images/logoNetflix.png" alt="Logo Netflix">
+        <a href="#">
+            <img src="images/logoNetflix.png" alt="Logo Netflix">
+        </a>
     </header>
 
     <main>
@@ -26,19 +30,20 @@
                 <h1>Entrar</h1>
                 <div class="inputs">
                     <label for="user">
-                        <input type="text" class="requiredInput" id="user" placeholder="Email ou número de telefone" required />
-                        
+                        <input type="text" id="user" placeholder="Email ou número de telefone"
+                            required />
+
                         <span class="error">Informe um email ou número de telefone válido.</span>
                     </label>
-    
-                    <label for="password">
+
+                    <label for="password" id="labelPass">
                         <input type="password" id="password" placeholder="Senha" required />
-                        <span>Mostrar</span>
-                        
+                        <span id="visiblePass">Mostrar</span>
+
                         <span class="error">A senha deve ter entre 4 e 60 caracteres.</span>
                     </label>
                 </div>
-    
+
                 <button type="submit">Entrar</button>
             </form>
 
@@ -55,7 +60,7 @@
                 <span>Novo por aqui? <a href="#Assine">Assine agora.</a></span>
 
                 <p>
-                    Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. 
+                    Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
                     <br />
                     <a href="#SaibaMais">Saiba Mais.</a>
                 </p>
@@ -85,5 +90,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./scripts/main.js" type="module"></script>
 </body>
+
 </html>

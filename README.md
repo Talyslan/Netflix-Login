@@ -1,12 +1,14 @@
-<h1 align="center"> Netflix - Login Screen</h1>
+<h1 align="center"> Netflix - Login Screen 📺</h1>
 
 <!-- <img src="https://github.com/Talyslan/Gerador-de-Cancelamento/assets/78499700/79dc42a1-54ff-421d-be7a-a9fb8cabc11b" alt="Layout no Computador" />
 <img src="https://github.com/Talyslan/Gerador-de-Cancelamento/assets/78499700/c56c83f7-6098-43a5-a9b3-26fd7c7ebfc4" alt="Layout no Celular" /> -->
 
 
 ## 🗿 O Projeto
+<img height="150" src="https://media.tenor.com/WaP8sT953fEAAAAi/netflix-logo.gif" alt="Logo Netflix"></img>
 
-Este proojeto foi feito rapidamente a fim de iniciar meus estudos com manipulação de DOM, algo divertido. O site consiste em digitar seu nome no campo e, após clicar no botão, o motivo para o seu cancelamento na internet irá se revelar!
+<blockquote>Netflix já posso desenvolver seus sites!</blockquote>
+Recriei a tela de login da Netflix a fim de reforçar o que eu consigo fazer com essas ferramentas!
 
 ## 📌 Como ver
 

@@ -9,15 +9,16 @@ footer {
 footer .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
     gap: 2em;
 }
 
 footer .links {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 15em;
+     grid-template-columns: repeat(4, 1fr);
+    column-gap: 2em;
     row-gap: .8em;
     font-size: .8em;
 }

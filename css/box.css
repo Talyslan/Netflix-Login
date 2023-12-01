@@ -1,6 +1,7 @@
 .box {
     background: var(--back);
     width: 50%;
+    min-width: 450px;
     max-width: 500px;
     min-height: 660px;
     padding: 4em 4em;
@@ -16,6 +17,12 @@
 }
 
 /* INPUTS AREA */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .inputs label {
     position: relative;
     display: flex;
@@ -32,8 +39,16 @@
     padding-left: .5em;
 }
 
+.inputs label input:focus, 
+.inputs label input:active {
+    background: var(--inputs-focus);
+}
+
 /* Ocultar/Mostar senha */
 label[for="password"] span:first-of-type {
+    display: none;
+    text-transform: uppercase;
+    user-select: none;
     position: absolute;
     right: 0;
     padding: 12px 12px;;
@@ -41,11 +56,6 @@ label[for="password"] span:first-of-type {
 
 label[for="password"] span:first-of-type:hover{
     cursor: pointer;
-}
-
-/* Required Input */
-.requiredInput {
-    border-bottom: 1px solid var(--error);
 }
 
 /* Button && Input commum */
@@ -62,6 +72,7 @@ form > button {
     color: var(--error);
     padding: 6px 3px;
     margin-bottom: 1em;
+    display: none;
 }
 
 /* Button */
@@ -76,6 +87,7 @@ form > button {
 .helpAndRemember {
     display: flex;
     justify-content: space-between;
+    font-size: .9em;
 }
 
 .helpAndRemember label input {
@@ -100,7 +112,11 @@ form > button {
 }
 
 .sign p,
-.helpAndRemember,
 .error {
     font-size: .8em;
+}
+
+/* Required Input */
+.requiredInput {
+    border-bottom: 1px solid var(--error);
 }
