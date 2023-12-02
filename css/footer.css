@@ -14,12 +14,15 @@ footer .container {
     gap: 2em;
 }
 
+footer .container p {
+    font-size: 1em;
+}
+
 footer .links {
     display: grid;
     align-items: center;
      grid-template-columns: repeat(4, 1fr);
-    column-gap: 2em;
-    row-gap: .8em;
+    row-gap: .9em;
     font-size: .8em;
 }
 
@@ -28,6 +31,7 @@ footer select {
     padding: 1em 2em;
     margin-bottom: 2em;
     z-index: 1; 
+    font-size: .8em;
 }
 
 .select-container {
@@ -36,8 +40,8 @@ footer select {
 
 footer .select-container img {
     filter: invert();
-    width: 20px;
+    width: 16px;
     position: absolute;
-    left: 6px;
-    top: 12px;
+    left: 8px;
+    top: 14px;
 }

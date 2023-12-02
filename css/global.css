@@ -12,6 +12,7 @@
     --white: rgb(210, 210, 210);
     --inputs: rgb(51, 51, 51);
     --inputs-focus: rgb(65, 65, 65);
+    --input-letters: rgba(218, 39, 39, 0.512);
     --btn: rgb(230, 10, 21);
     --error: rgb(231, 125, 4);
     --select: rgb(0, 0, 0);
@@ -53,6 +54,7 @@ button:hover {
 }
 
 header img {
-    width: 170px;
-    margin: 1.4em 1.8em;
+    width: 20%;
+    max-width: 170px;
+    margin: 1.5em 2em;
 }

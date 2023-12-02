@@ -30,14 +30,13 @@
                 <h1>Entrar</h1>
                 <div class="inputs">
                     <label for="user">
-                        <input type="text" id="user" placeholder="Email ou número de telefone"
-                            required />
+                        <input type="text" id="user" placeholder="Email ou número de telefone" autocomplete="false" required />
 
                         <span class="error">Informe um email ou número de telefone válido.</span>
                     </label>
 
                     <label for="password" id="labelPass">
-                        <input type="password" id="password" placeholder="Senha" required />
+                        <input type="password" id="password" placeholder="Senha" autocomplete="false" />
                         <span id="visiblePass">Mostrar</span>
 
                         <span class="error">A senha deve ter entre 4 e 60 caracteres.</span>
@@ -61,7 +60,7 @@
 
                 <p>
                     Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
-                    <br />
+                   
                     <a href="#SaibaMais">Saiba Mais.</a>
                 </p>
             </div>
