@@ -16,7 +16,7 @@ O projeto está hospedado no próprio GithubPages:
 [Netflix - Login Screen](https://talyslan.github.io/Netflix-Login/)
 
 
-## Technologies Used
+## 🚀 Technologies Used
 
 A criação deste site utiliza as tecnologias básicas para uma página web:
 
