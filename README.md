@@ -8,7 +8,7 @@
 <img height="150" src="https://media.tenor.com/WaP8sT953fEAAAAi/netflix-logo.gif" alt="Logo Netflix"></img>
 
 <blockquote>Netflix já posso desenvolver seus sites!</blockquote>
-Recriei a tela de login da Netflix a fim de reforçar o que eu consigo fazer com essas ferramentas!
+Recriei a tela de login da Netflix a fim de reforçar o que eu consigo fazer com essas ferramentas! Aqui você consegue analisar não só o HTML e CSS, além de suas interações: mudar de idioma, visualizar ou não a senha e verificação da adequação da senha ou não ao esperado.
 
 ## 📌 Como ver
 
