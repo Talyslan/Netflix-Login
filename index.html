@@ -28,23 +28,26 @@
     <main>
         <div class="box">
             <form action="/">
-                <h1>Entrar</h1>
+                <h1 id="title">Entrar</h1>
                 <div class="inputs">
                     <label for="user">
-                        <input type="text" id="user" placeholder="Email ou número de telefone" autocomplete="false" required />
+                        <span id="spanPlaceholderUser">Email ou número de telefone</span>
+                        <input type="text" id="user" autocomplete="false" required />
 
-                        <span class="error">Informe um email ou número de telefone válido.</span>
+                        <span class="error" id="userError">Informe um email ou número de telefone válido.</span>
                     </label>
 
                     <label for="password" id="labelPass">
-                        <input type="password" id="password" placeholder="Senha" autocomplete="false" />
+                        <span id="spanPlaceholderPass">Senha</span>
+                        <input type="password" id="password" autocomplete="false" required/>
                         <span id="visiblePass">Mostrar</span>
-
-                        <span class="error">A senha deve ter entre 4 e 60 caracteres.</span>
+                        <span id="inVisiblePass">Ocultar</span>
+                        
+                        <span class="error" id="passError">A senha deve ter entre 4 e 60 caracteres.</span>
                     </label>
                 </div>
 
-                <button type="submit">Entrar</button>
+                <button type="submit" id="btn">Entrar</button>
             </form>
 
             <div class="helpAndRemember">
@@ -53,13 +56,13 @@
                     Lembre-se de mim
                 </label>
 
-                <a href="#Ajuda">Precisa de ajuda?</a>
+                <a href="#Ajuda" id="ajuda">Precisa de ajuda?</a>
             </div>
 
             <div class="sign">
-                <span>Novo por aqui? <a href="#Assine">Assine agora.</a></span>
+                <span id="p-novoporaq">Novo por aqui? <a href="#Assine">Assine agora.</a></span>
 
-                <p>
+                <p id="p">
                     Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
                    
                     <a href="#SaibaMais">Saiba Mais.</a>
@@ -70,22 +73,22 @@
 
     <footer>
         <div class="container">
-            <p>
+            <p id="pduvidas">
                 Dúvidas? Ligue <a href="#Ligue">0800 581 2876</a>
             </p>
             <div class="links">
-                <a href="">Perguntas frequentes</a>
-                <a href="">Central de Ajuda</a>
-                <a href="">Termos de Uso</a>
-                <a href="">Privacidade</a>
-                <a href="">Preferências de cookies</a>
-                <a href="">Informações corporativas</a>
+                <a href="" id="faq">Perguntas frequentes</a>
+                <a href="" id="helpCenter">Central de Ajuda</a>
+                <a href="" id="terms">Termos de Uso</a>
+                <a href="" id="privacy">Privacidade</a>
+                <a href="" id="cookie">Preferências de cookies</a>
+                <a href="" id="corporate">Informações corporativas</a>
             </div>
             <div class="select-container">
                 <img src="./images/global.png" alt="Globo">
-                <select>
-                    <option value="Português" select>Português</option>
-                    <option value="English">English</option>
+                <select id="select">
+                    <option value="pt-BR" select id="port">Português</option>
+                    <option value="en" id="en">English</option>
                 </select>
             </div>
         </div>

@@ -28,10 +28,24 @@
     flex-direction: column;
 }
 
+.inputs label span:first-of-type {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    font-size: .95em;
+    cursor: text;
+    transition: all 0.2s ease;
+}
+
+.inputs label span.inputSelect {
+    font-size: .7em;
+    margin-top: -12px;
+    margin-left: -6px;
+}
+
 .inputs label input {
     background: var(--inputs);
-    padding: 0 1.3em;
-    padding-top: .2em;
+    padding: .5em 0 0 .8em;
 }
 
 .inputs label input:focus, 
@@ -40,24 +54,25 @@
 }
 
 /* Ocultar/Mostar senha */
-label[for="password"] span:first-of-type {
+#labelPass > #visiblePass,
+#labelPass > #inVisiblePass {
     display: none;
     text-transform: uppercase;
     user-select: none;
     position: absolute;
     right: 0;
-    padding: 12px 12px;;
+    padding: 12px 12px;
 }
 
-label[for="password"] span:first-of-type:hover{
+#labelPass > #visiblePass:hover,
+#labelPass > #inVisiblePass:hover{
     cursor: pointer;
 }
 
 /* Button && Input commum */
 .inputs label input,
 form > button {
-    font-size: 1em;
-    height: 3em;
+    height: 3.5em;
     width: 100%;
     border-radius: 4px;
     color: var(--white);
@@ -67,9 +82,9 @@ form > button {
 .error {
     color: var(--error);
     padding: 6px 3px;
-    margin-bottom: 1em;
     display: none;
     font-size: .8em;
+    transition: all 0.3s ease;
 }
 
 /* Button */
@@ -122,6 +137,8 @@ form > button {
 }
 
 /* Required Input */
-.requiredInput {
+.requiredInput,
+.inputs label input.requiredInput:focus, 
+.inputs label input.requiredInput:active {
     border-bottom: 1px solid var(--error);
 }
