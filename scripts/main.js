@@ -118,7 +118,7 @@ const elements = {
         'pt-BR': 'Entrar',
         'en': 'Sign In'
     },
-    'remember-me': {
+    'rememberMe': {
         'pt-BR': 'Lembre-se de mim',
         'en': 'Remember me'
     },
